@@ -1,4 +1,4 @@
-# Webutvikling 101
+# Intro til webutvikling
 
 Velkommen til kurs i webutvikling for nybegynnere!
 
