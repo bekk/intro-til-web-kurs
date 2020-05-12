@@ -1,4 +1,4 @@
-# Webutvikling101: Del2
+# Intro til webutvikling: Del2
 Nå skal vi dykke litt mer ned i hva frontendområdet har å by på. Målet med denne
 delen er å se hvilke teknikker og metoder som finnes for å lage en moderne
 single page application. Du finner slides på [bekk.github.io/webutvikling101/del2/slides](http://bekk.github.io/webutvikling101/del2/slides)
