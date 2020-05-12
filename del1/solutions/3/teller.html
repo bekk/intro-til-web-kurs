@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Teller</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <main>
       <button id="decrease" class="button" type="button">-</button>
-      <output id="output" class="console">0</output>
+      <span id="output" class="console">0</span>
       <button id="increase" class="button" type="button">+</button>
     </main>
     <script type="text/javascript">
-      'use strict';
-      var decrease = document.querySelector('#decrease');
-      var increase = document.querySelector('#increase');
-      var output = document.querySelector('#output');
+      "use strict";
+      var decrease = document.querySelector("#decrease");
+      var increase = document.querySelector("#increase");
+      var output = document.querySelector("#output");
 
-      decrease.addEventListener('click', function() {
-        var currentNumber = Number(output.textContent);
+      decrease.addEventListener("click", function () {
+        var currentNumber = parseInt(output.textContent);
         output.textContent = currentNumber - 1;
       });
 
-      increase.addEventListener('click', function() {
-        var currentNumber = Number(output.textContent);
+      increase.addEventListener("click", function () {
+        var currentNumber = parseInt(output.textContent);
         output.textContent = currentNumber + 1;
       });
     </script>

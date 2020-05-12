@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Webutvikling 101</title>
+    <title>Intro til webutvikling</title>
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css"
@@ -58,6 +58,7 @@ class: center middle
 
 ![](resources/css.png)
 
+.source[https://hackernoon.com/what-is-css-beginners-guide-88433ymq]
 ---
 
 class: center middle
@@ -67,45 +68,10 @@ class: center middle
 .source[http://codepen.io/peterschmiz/pen/xmqCg]
 
 ---
-exclude:true
-class: fullscreen
-
-![](resources/abakus.png)
-
----
-exclude: true
-class: fullscreen
-
-![](resources/uio.png)
-
----
 class: fullscreen
 
 ![](resources/uib.png)
 
----
-exclude:true
-class: fullscreen
-
-![](resources/abakus-html.png)
-
----
-exclude: true
-class: fullscreen
-
-![](resources/uio-html.png)
-
----
-exclude:true
-class: fullscreen
-
-![](resources/abakus-uten-css.png)
-
----
-exclude: true
-class: fullscreen
-
-![](resources/uio-uten-css.png)
 
 ---
 class: fullscreen
@@ -343,30 +309,34 @@ Forklar når scriptet blir kjørt
 
 # JavaScript DOM-api
 
-```javascript
-  var boks = document.querySelector('#boks');
+```html
+  <div id="boks"></div>
 ```
 
 --
 
 ```javascript
-  var boks = document.querySelector('#boks');
+  const boks = document.querySelector('#boks');
+```
+
+--
+
+```javascript
+  const boks = document.querySelector('#boks');
   boks.innerHTML;
   // <a href="mer.html">Klikk her</a> for å lære mer
 ```
 --
 
 ```javascript
-  var boks = document.querySelector('#boks');
+  const boks = document.querySelector('#boks');
   boks.textContent;
-  // Klikk her for å lære mer
 ```
 
 --
 
 ```javascript
-  var text = document.querySelector('#boks').textContent;
-  // Klikk her for å lære mer
+  const text = document.querySelector('#boks').textContent;
 ```
 
 ---
@@ -383,8 +353,8 @@ Forklar når scriptet blir kjørt
 
 ```javascript
   document.querySelector('#danse-ape').addEventListener('click', function() {
-    var el = document.querySelector('#danse-ape');
-    var src = el.getAttribute('src').replace('.png', '.gif');
+    const el = document.querySelector('#danse-ape');
+    const src = el.getAttribute('src').replace('.png', '.gif');
     el.setAttribute('src', src);
   });
 ```
@@ -444,9 +414,9 @@ class: split
 #Oppgave
 
 * Forsett på løsningen fra forrige oppgave
-* Legg til en unik id på `output` og `button` elementene
-* Legg til click event handler som legger til 1 på tallet i `output` når man trykker på + knappen
-* Legg til click event handler som trekker fra 1 på tallet i `output` når man trykker på - knappen
+* Legg til en unik id på `span` og `button` elementene
+* Legg til click event handler som legger til 1 på tallet i `span` når man trykker på + knappen
+* Legg til click event handler som trekker fra 1 på tallet i `span` når man trykker på - knappen
 
 
 <iframe src="../solutions/2/teller.html" style="width: 50%; background-color:#fff" />
@@ -1303,49 +1273,12 @@ class: center middle
 ##Hva skal vi med det?
 
 ---
-
-class: center middle
-
-<button class="en-knapp">AVBRYT</button>
-
----
 class: center middle
 
 <button class="en-knapp">AVBRYT</button>
 <button class="hvr-wobble-horizontal">AVBRYT</button>
 <button class="hvr-wobble-vertical">AVBRYT</button>
 
----
-class: center middle
-
-<a href="http://ianlunn.github.io/Hover/">Hover-effekter</a>
-
----
-class: center middle
-
-##Focus
-
----
-class: center middle
-##Focus
-<button class="en-knapp">AVBRYT</button>
-<button class="hvr-wobble-horizontal">AVBRYT</button>
-<button class="hvr-wobble-vertical">AVBRYT</button>
-
----
-class: center middle
-##Outline: 1px solid blue
-
----
-class: middle center
-
-## Hvordan brukes element state?
-
-```css
-    selector:pseudo-class {
-        property: value;
-    }
-```
 ---
 class: middle center
 
@@ -1367,43 +1300,6 @@ class: middle center
         outline: 1px solid orange;
     }
 ```
-
----
-class: middle center
-
-## transition
-
-```css
-    div {
-        transition: <property> <duration> <timing-function> <delay>;
-    }
-```
----
-class: middle center
-
-## transition
-
-```css
-    button {
-        background-color: blue;
-        width: 200px;
-        transition: width 2s, background-color 2s, transform 2s;
-    }
-
-    button:hover {
-        background-color: red;
-        width: 400px;
-        transform: rotate(180deg);
-    }
-
-```
-
----
-class: center middle
-
-# DevTool
-
-## ⌘ + ⌥ + i &nbsp;/&nbsp; ctrl + ⇧ + i
 
 ---
 class: split

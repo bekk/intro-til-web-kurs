@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Teller</title>
   </head>
   <style type="text/css">
@@ -16,23 +16,23 @@
   <body>
     <main>
       <button id="decrease">-</button>
-      <output id="output">0</output>
+      <span id="output">0</span>
       <button id="increase">+</button>
     </main>
     <script type="text/javascript">
-      'use strict';
-      var decrease = document.querySelector('#decrease');
-      var increase = document.querySelector('#increase');
-      var output = document.querySelector('#output');
+      "use strict";
+      var decrease = document.querySelector("#decrease");
+      var increase = document.querySelector("#increase");
+      var span = document.querySelector("span");
 
-      decrease.addEventListener('click', function() {
-        var currentNumber = Number(output.textContent);
-        output.textContent = currentNumber - 1;
+      decrease.addEventListener("click", function () {
+        var currentNumber = parseInt(span.textContent);
+        span.textContent = currentNumber - 1;
       });
 
-      increase.addEventListener('click', function() {
-        var currentNumber = Number(output.textContent);
-        output.textContent = currentNumber + 1;
+      increase.addEventListener("click", function () {
+        var currentNumber = parseInt(span.textContent);
+        span.textContent = currentNumber + 1;
       });
     </script>
   </body>
