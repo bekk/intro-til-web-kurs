@@ -78,7 +78,7 @@ function handleRequest(siteRoot, request, response) {
   }
 }
 
-http.createServer(handleRequest.bind(null, defaultSiteRoot)).listen(6000);
+http.createServer(handleRequest.bind(null, defaultSiteRoot)).listen(8000);
 http.createServer(handleRequest.bind(null, solutionSiteRoot1)).listen(6001);
 http.createServer(handleRequest.bind(null, solutionSiteRoot2)).listen(6002);
 http.createServer(handleRequest.bind(null, solutionSiteRoot3)).listen(6003);
@@ -86,4 +86,4 @@ http.createServer(handleRequest.bind(null, solutionSiteRoot4)).listen(6004);
 http.createServer(handleRequest.bind(null, solutionSiteRoot5)).listen(6005);
 http.createServer(handleRequest.bind(null, solutionSiteRoot6)).listen(6006);
 
-console.log('Server started on http://localhost:6000');
+console.log('Server started on http://localhost:8000');
