@@ -3,33 +3,36 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Webutvikling 101</title>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
-    <link rel="stylesheet" href="slides.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css"
+    />
+    <link rel="stylesheet" href="slides.css" />
   </head>
   <body class="bekk-black">
     <textarea id="source">
 
 exclude:true
 class: front-page
-  # Webutvikling 101
+  # Intro til webutvikling
   ## NTNU
 
   <span class="today-date"></span>
 ---
 exclude: true
 class: front-page
-  # Webutvikling 101
+  # Intro til webutvikling
   ## UiO
 
   <span class="today-date"></span>
 ---
 class: front-page
-  # Webutvikling 101
-  ## UiT
+  # Intro til webutvikling
+  ## UiB
 
   <span class="today-date"></span>
 ---
-#Webutvikling 101
+#Intro til webutvikling
 
 ##Repo
 <div style="font-size: 2em">
@@ -53,7 +56,7 @@ class: middle center
 
 class: center middle
 
-![](resources/css-gangnam.jpg)
+![](resources/css.png)
 
 ---
 
@@ -62,12 +65,6 @@ class: center middle
 ![](resources/javascript.png)
 
 .source[http://codepen.io/peterschmiz/pen/xmqCg]
-
----
-
-class: center middle
-
-![](resources/browser-layered-cake.jpeg)
 
 ---
 exclude:true
@@ -84,7 +81,7 @@ class: fullscreen
 ---
 class: fullscreen
 
-![](resources/uit.png)
+![](resources/uib.png)
 
 ---
 exclude:true
@@ -97,11 +94,6 @@ exclude: true
 class: fullscreen
 
 ![](resources/uio-html.png)
-
----
-class: fullscreen
-
-![](resources/uit-html.png)
 
 ---
 exclude:true
@@ -118,37 +110,8 @@ class: fullscreen
 ---
 class: fullscreen
 
-![](resources/uit-uten-css.png)
+![](resources/uib-uten-css.png)
 
----
-exclude:true
-class: fullscreen
-
-  <iframe src="resources/abakus.no.html" />
-
----
-exclude: true
-class: fullscreen
-
-  <iframe src="http://www.uio.no/studier/program/#topic=&type=" />
-
----
-class: fullscreen
-
-  <iframe src="https://uit.no/utdanning" />
-
----
-class: center middle
-<img src="resources/apple-pages.png"/>
-.source[https://www.icloud.com/#pages]
----
-class: center middle
-<img src="resources/google-maps.png"/>
-.source[https://maps.google.com/]
----
-class: center middle
-<img src="resources/spotify.png"/>
-.source[https://play.spotify.com/]
 ---
 
 class: center middle
@@ -222,8 +185,6 @@ Kun elementer som ikke **kan** ha innhold avsluttes dirrekte
   <div id="unik-id"></div>
 
   <div class="klasse-av-elementer"></div>
-
-  <div title="Tittle på element"></div>
 ```
 
 --
@@ -241,7 +202,7 @@ Kun elementer som ikke **kan** ha innhold avsluttes dirrekte
 
 ```html
   <!doctype html>
-  <html lang="en">
+  <html lang="no">
 
     <head>
       <title>En enkel HTML-side</title>
@@ -257,7 +218,7 @@ Kun elementer som ikke **kan** ha innhold avsluttes dirrekte
       <main>
         <article>En artikkel</article>
       </main>
-      <footer>The end</footer>
+      <footer>Slutt på side</footer>
     </body>
 
   </html>
@@ -275,12 +236,17 @@ vis hvordan devtools fungerer
 
 
 ---
+class: fullscreen
+
+![](resources/uib-devtool-visning.png)
+
+---
 class: split
 
 # Oppgave
 
 * Ta utgangspunkt i filen: `del1/assignment/teller.html`
-* Bruk html-elementene `<button>` og `<output>` for å lage layouten til høyre
+* Bruk html-elementene `<button>` og `<span>` for å lage layouten til høyre
 
 <iframe src="../solutions/1/teller.html" style="width: 50%; background-color:#fff" />
 
@@ -301,10 +267,10 @@ class: center middle
 --
 
 ```javascript
-  var num = 1;
-  var str = 'Bekk';
-  var arr = [1, 2, 3, 4, 5];
-  var obj = {
+  const num = 1;
+  const str = 'Bekk';
+  const arr = [1, 2, 3, 4, 5];
+  const obj = {
     key:  'value',
     key2: 'value2'
   };
@@ -316,40 +282,11 @@ class: center middle
     return `Hello, ${name}!`;
   }
 
-  var hello = function(name) {
+  const hello = function(name) {
     return `Hello, ${name}!`;
   }
 
   hello('Bob'); // Hello, Bob!
-```
----
-
-# JavaScript casting
-
-```javascript
-  var n = 1;
-  typeof n; // number
-```
-
---
-
-```javascript
-  var n = '1';
-  typeof n; // string
-```
-
---
-
-```javascript
-  var n = 1;
-  typeof String(n); // string
-```
-
---
-
-```javascript
-  var n = '1';
-  typeof Number(n); // number
 ```
 
 ---
@@ -357,7 +294,7 @@ class: center middle
 # JavaScript funksjoner
 
 ```javascript
-  var someFunction = function() {
+  const someFunction = function() {
     // gjør noe gøy
   };
 ```
@@ -367,32 +304,22 @@ class: center middle
 ```
 --
 ```javascript
-  someOtherFunction(function() {
-    // gjør noe gøy
-  });
-```
+  const name = 'Ragnhild';
 
----
-
-# JavaScript funksjoner
-
-```javascript
-  var name = 'kent';
-
-  var someFunction = function() {
+  const someFunction = function() {
     console.log(name);
   };
 ```
 --
 ```
-  // kent
+  // Ragnhild
 ```
 
 ---
 # JavaScript i nettleseren
 ```html
   <!doctype html>
-  <html lang="en">
+  <html lang="no">
 
     <head>
       <title>En enkel HTML-side</title>
@@ -1957,28 +1884,36 @@ bekk.no/jobb
 
 
     </textarea>
-    <script src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js" type="text/javascript"></script>
+    <script
+      src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js"
+      type="text/javascript"
+    ></script>
     <script type="text/javascript">
       var slideshow = remark.create({
-        ratio: '16:9',
-        highlightLanguage: 'javascript',
-        highlightStyle: 'monokai',
+        ratio: "16:9",
+        highlightLanguage: "javascript",
+        highlightStyle: "monokai",
         navigation: {
-          scroll: false
-        }
+          scroll: false,
+        },
       });
 
-      var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
-
-      document.querySelector('.today-date').textContent = dateStr;
-
-      document.querySelector('#danse-ape').addEventListener('click', function(event) {
-        var src = event.currentTarget.getAttribute('src');
-        src = src.replace(/(gif|png)/, src.includes('png') ? 'gif' : 'png');
-
-        event.currentTarget.setAttribute('src', src);
+      var dateStr = new Date().toLocaleString("nb-NO", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
       });
+
+      document.querySelector(".today-date").textContent = dateStr;
+
+      document
+        .querySelector("#danse-ape")
+        .addEventListener("click", function (event) {
+          var src = event.currentTarget.getAttribute("src");
+          src = src.replace(/(gif|png)/, src.includes("png") ? "gif" : "png");
+
+          event.currentTarget.setAttribute("src", src);
+        });
     </script>
-
   </body>
 </html>
