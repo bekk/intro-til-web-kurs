@@ -248,42 +248,36 @@ class: center middle
 ```
 --
 
-```javascript
-  function hello(name) {
-    return `Hello, ${name}!`;
-  }
-
-  const hello = function(name) {
-    return `Hello, ${name}!`;
-  }
-
-  hello('Bob'); // Hello, Bob!
-```
-
 ---
 
 # JavaScript funksjoner
 
 ```javascript
+  function someFunction() {
+    // gjør noe gøy
+  };
+
   const someFunction = function() {
     // gjør noe gøy
   };
 ```
---
-```javascript
-  someFunction(name);
-```
+
 --
 ```javascript
   const name = 'Ragnhild';
 
   const someFunction = function() {
-    console.log(name);
+    console.log(name); // Ragnhild
   };
 ```
+
 --
-```
-  // Ragnhild
+```javascript
+  const someFunction = function(name) {
+    console.log(name);
+  };
+
+  someFunction('Ragnhild'); // Ragnhild
 ```
 
 ---
