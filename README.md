@@ -7,7 +7,7 @@ Velkommen til kurs i webutvikling for nybegynnere!
 Er du nysgjerrig på webutvikling og lurer på hvordan du skal komme igang? Har du
 hørt snakk om HTML, CSS og JavaScript, men usikker på hva sammenhengen mellom
 dem er? Har du kanskje testa ut webutvikling, men ikke fått knappene til å havne
-der du vil ha dem? Da er du velkommen til Webutvikling101.
+der du vil ha dem? Da er du velkommen til Intro til webutvikling.
 
 I løpet av dette kurset vil vi gå gjennom de mest grunnleggende delene av webutvikling for å etablere ferdigheter som kommer godt med ute på prosjekt. Dagen vil bestå av to deler hvor hver del er fordelt på hver sine mapper. Du finner nærmere instrukser i de mappene.
 

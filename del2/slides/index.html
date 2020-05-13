@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Webutvikling 101</title>
+    <title>Intro til webutvikling</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/bekk/remark/master/dist/bekk.css">
     <link rel="stylesheet" href="slides.css">
   </head>
@@ -181,7 +181,7 @@ class: cols two
 
 
 ---
-# Parse reponsen
+# Parse responsen
 
 
 ## JSON
@@ -251,9 +251,9 @@ class: center middle
 ---
 class: split
 
-# Oppgave
+# Oppgave 1
 
-* Gjør en request mot `/sok?tag=bekk` når siden blir lastet
+* Gå til scripts.js og gjør en request mot `/sok?tag=bekk` når siden blir lastet
 * Logg ut resultatet i consollet
 
 <iframe src="http://localhost:6001/" style="width: 50%; border-left: 1px solid #515151;" />
@@ -339,12 +339,14 @@ for (var i = 0; i < data.length; i++) {
 # Template strings
 
 ```javascript
-var name = "Mats";
+var name = "Mathilde";
 var text1 = 'Hei, ' + name + ', hvordan går det?';
 var text2 = `Hei, ${name}, hvordan går det?`;
 ```
 
-&nbsp;
+```
+  // Hei, Mathilde, hvordan går det?
+```
 
 --
 
@@ -413,9 +415,9 @@ medTag.innerHTML = '<div>Masse <b>HTML</b> kode</div>';
 ---
 
 class: split
-# Oppgave
+# Oppgave 2
 
-* Lag en ny funksjon som heter `renderImages` som tar inn listen over bilder
+* Lag en ny funksjon som heter `renderImages` som tar inn listen over bilder (i script.js)
  * Denne funksjonen skal returnere HTML-markup
  * For hvert bilde, lag en `<figure>` med `<img>` som viser bildet og en `<figcaption>` som viser tittelen
 * Sett HTML-en som `renderImages` returnerer som innhold til `<main>`-elementet
@@ -544,7 +546,7 @@ Legger media-queries til slutt i CSS-en
 
 ---
 class: split
-# Oppgave
+# Oppgave 3
 * Legg til media-queries nederst i CSS-filen for å:
  * Minske bredden på `figure` slik at det blir plass til 2 bilder i bredden ved medium skjermer
  * Vise 3 bilder i bredden ved enda bredere skjerm
@@ -792,7 +794,7 @@ document.querySelector('.mitt-form').addEventListener('submit', function(event) 
 ---
 class: split
 
-# Oppgave
+# Oppgave 4
 
 * Forsett på løsningen fra forrige oppgave
 * Legg til submit event handler på form'et
@@ -890,7 +892,7 @@ router();
 
 class: split
 
-# Oppgave
+# Oppgave 5
 
 Forsett på løsningen fra forrige oppgave
 
@@ -946,7 +948,7 @@ Lenke på bilder:
 
 class: split
 
-# Oppgave
+# Oppgave 6
 
 Forsett på løsningen fra forrige oppgave
 
@@ -1100,7 +1102,7 @@ document.querySelector('main').addEventListener('click', function (event) {
 
 class: split
 
-# Oppgave
+# Oppgave 7
 
 Forsett på løsningen fra forrige oppgave
 
